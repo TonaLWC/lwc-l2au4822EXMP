@@ -1,11 +1,8 @@
 <template>
-    <lightning-input
-        type="checkbox-button"
-        label="Add pepperoni"
-        checked
-        value="pepperoni"
-    >
-    </lightning-input>
-    <lightning-input type="checkbox-button" label="Add salami" value="salami">
-    </lightning-input>
+            <lightning-layout-item flexibility="auto" padding="around-small" size="6">
+                <lightning-input label="Teléfono celular" type="tel" name="mobilePhone" onchange={onchangeMobilePhone}
+                    value={contact.mobilePhone} class="string-input" disabled={contact.blockField} 
+                    placeholder="Ingrese 10 dígitos…" pattern="[0-9]{10}">
+                </lightning-input>
+            </lightning-layout-item>
 </template>
