@@ -1,13 +1,11 @@
 import { LightningElement } from 'lwc';
 
-export default class App extends LightningElement {
+export default class LightningExampleAccordionConditional extends LightningElement {
     activeSectionMessage = '';
     isDVisible = false;
     //Crea variable para mostrar el día hoy en consola
-    fechaLimite = '';
-    fechaLimite = Date.now();
-    hoy = new Date(fechaLimite);
-    hoy =  hoy.toDateString();
+    fechaLimite = new Date().toDateString();
+
    
 
     handleToggleSection(event) {
