@@ -5,7 +5,7 @@ export default class App extends LightningElement {
     isDVisible = false;
     //Crea variable para mostrar el día hoy en consola
     fechaLimite = Date.now();
-    hoy = new Date(this.fechaLimite);
+    hoy = new Date(fechaLimite);
     hoy =  hoy.toDateString();
    
 
